@@ -1,118 +1,161 @@
-📊 H-1B Visa Data Analysis Dashboard
-(SQL + Python + Power BI End-to-End Project)
-📌 Project Overview
+# 📊 H-1B Visa Data Analysis Dashboard  
+### *(SQL + Python + Power BI Project)*
 
-This project is a complete end-to-end data analysis solution built using SQL, Python, and Power BI to analyze H-1B visa applications.
+---
 
-The goal is to transform raw visa data into meaningful insights about:
+## 📌 Project Overview  
+This project is an **end-to-end data analytics solution** that analyzes H-1B visa applications using **SQL, Python, and Power BI**.  
 
-Application trends
-Approval rates
-Job demand
-Salary patterns
-Employer and location insights
+The objective is to transform raw visa data into actionable insights related to:
+- Application trends  
+- Approval and denial rates  
+- Job demand  
+- Salary distribution  
+- Employer and location analysis  
 
-The final output is an interactive Power BI dashboard that helps understand how to increase chances of getting an H-1B visa.
+The final output is an **interactive dashboard** that helps understand key factors influencing H-1B visa outcomes.
 
-🎯 Objectives
-Analyze total applications, approvals, and denials
-Identify high-demand job roles
-Understand salary trends across occupations
-Analyze geographic distribution (states & cities)
-Identify top H-1B sponsoring companies
-🔄 Project Workflow (End-to-End)
-1️⃣ Data Collection
-H-1B datasets collected (FY2025 Q1–Q4)
-2️⃣ Data Storage (SQL)
-Created database and tables in MySQL
-Loaded large CSV files into SQL
+---
 
-📄 SQL Script:
+## 🎯 Objectives  
+- Analyze total applications, approvals, and denials  
+- Identify top job roles in demand  
+- Understand wage distribution across job categories  
+- Explore geographic trends (state & city level)  
+- Identify top companies sponsoring H-1B visas  
 
-3️⃣ Data Cleaning (SQL + Python)
-Removed irrelevant columns
-Handled missing values
-Standardized column formats
-Created cleaned dataset (h1b_cleaned_data)
+---
 
-✔ Python used for:
+## 🔄 Project Workflow  
 
-Data preprocessing
-Data filtering
-Data transformation
-4️⃣ Data Analysis (Python)
-Explored trends in:
-Case status
-Job titles
-Wage distribution
-Generated insights before visualization
-5️⃣ Data Visualization (Power BI)
-Built an interactive dashboard with filters and KPIs
-📊 Dashboard Features
-🔹 KPI Cards
-Total Applications: 581K
-Total Approvals: 539K
-Total Denied: 3,505
-Approval Rate: 92.91%
-🔹 Key Visuals
-📌 Application Status Distribution (Donut Chart)
-📌 Top Job Titles (Bar Chart)
-📌 Average Wage by Role
-📌 H1B Approval by City
-📌 Top Employers (Amazon, Cognizant, EY, Microsoft, Google)
-📌 Geographic Map (State-wise distribution)
-🔹 Filters / Slicers
-Case Status (Certified, Denied, Withdrawn)
-🛠 Tools & Technologies
-MySQL → Data storage & querying
-Python (Pandas, NumPy) → Data cleaning & analysis
-Power BI → Dashboard development
-DAX → KPIs & calculations
-Power Query → Data transformation
-📈 Key Insights
-Majority of applications are Certified (Approved)
-High demand for Software & Data-related roles
-Top hiring cities include:
-New York
-Seattle
-Austin
-San Francisco
-Large companies dominate H-1B sponsorship:
-Amazon
-Cognizant
-EY
-Microsoft
-Wage trends show higher pay for specialized roles
-🚀 How to Run This Project
-Step 1: Setup SQL Database
-Run SQL script
-Import datasets into MySQL
-Step 2: Run Python Notebook
-Perform data cleaning and preprocessing
-Step 3: Open Power BI
-Load cleaned dataset
-Open .pbix file
-Step 4: Explore Dashboard
-Use filters and visuals to analyze insights
-📷 Dashboard Preview
+### 1️⃣ Data Collection  
+- Dataset sourced from H-1B visa disclosure data (multiple quarters)
 
-(Add your updated dashboard screenshot here — the one you just shared)
+### 2️⃣ Data Storage (SQL)  
+- Created database and tables using MySQL  
+- Imported large CSV datasets  
 
-🔮 Future Enhancements
-Add time-series trend analysis
-Build machine learning model for prediction
-Improve UI with advanced Power BI design
-Automate ETL pipeline
-💼 Skills Demonstrated
-Data Cleaning & Transformation
-SQL Data Handling
-Python Data Analysis
-Data Visualization (Power BI)
-Business Insight Generation
-🤝 Connect with Me
+📄 SQL Script: H1B_Visa.sql  
 
-Feel free to connect with me on LinkedIn for feedback, collaboration, or opportunities!
+---
 
-⭐ Acknowledgment
+### 3️⃣ Data Cleaning (SQL + Python)  
+- Removed irrelevant columns  
+- Handled missing values  
+- Standardized data formats  
+- Created a cleaned dataset (`h1b_cleaned_data`)  
 
-This project is created for learning and portfolio purposes, showcasing real-world data analytics skills.
+---
+
+### 4️⃣ Data Analysis (Python)  
+- Performed exploratory data analysis (EDA)  
+- Analyzed:
+  - Case status distribution  
+  - Job roles  
+  - Wage trends  
+
+---
+
+### 5️⃣ Data Visualization (Power BI)  
+- Built an interactive dashboard with KPIs and filters  
+
+---
+
+## 📊 Dashboard Features  
+
+### 🔹 KPI Cards  
+- **Total Applications:** 581K  
+- **Total Approvals:** 539K  
+- **Total Denied:** 3,505  
+- **Approval Rate:** 92.91%  
+
+---
+
+### 🔹 Visualizations  
+- Application Status Distribution (Donut Chart)  
+- Top Job Titles (Bar Chart)  
+- Average Wage by Job Role  
+- H1B Approval by City  
+- Top Employers (Amazon, Cognizant, EY, Microsoft, Google)  
+- Map showing application distribution across states  
+
+---
+
+### 🔹 Filters  
+- Case Status (Certified, Denied, Withdrawn)  
+
+---
+
+## 🛠 Tools & Technologies  
+- **MySQL** → Data storage & querying  
+- **Python (Pandas, NumPy)** → Data cleaning & analysis  
+- **Power BI** → Dashboard development  
+- **DAX** → Calculations & KPIs  
+- **Power Query** → Data transformation  
+
+---
+
+## 📈 Key Insights  
+- Majority of applications are **Certified (Approved)**  
+- High demand for **Software & IT roles**  
+- Key hiring locations:
+  - New York  
+  - Seattle  
+  - Austin  
+  - San Francisco  
+- Top companies dominate sponsorship:
+  - Amazon  
+  - Cognizant  
+  - EY  
+  - Microsoft  
+- Wage varies significantly by job role and expertise  
+
+---
+
+## 🚀 How to Run the Project  
+
+1. **Setup Database**
+   - Run SQL script in MySQL  
+   - Import dataset  
+
+2. **Run Python Notebook**
+   - Perform cleaning and preprocessing  
+
+3. **Open Power BI**
+   - Load cleaned dataset  
+   - Open `.pbix` dashboard file  
+
+4. **Explore Dashboard**
+   - Use filters and visuals for insights  
+
+---
+
+## 📷 Dashboard Preview  
+(Add your dashboard screenshot here)
+
+---
+
+## 🔮 Future Enhancements  
+- Add time-based trend analysis  
+- Build prediction model for approval chances  
+- Improve dashboard UI/UX  
+- Automate ETL pipeline  
+
+---
+
+## 💼 Skills Demonstrated  
+- Data Cleaning & Transformation  
+- SQL & Database Management  
+- Python Data Analysis  
+- Data Visualization (Power BI)  
+- Business Intelligence  
+
+---
+
+## 🤝 Connect  
+If you found this project useful, feel free to connect and share your feedback!
+
+---
+
+## ⭐ Acknowledgment  
+This project is built for **learning and portfolio purposes**, demonstrating real-world data analytics skills.
